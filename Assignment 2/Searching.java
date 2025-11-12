@@ -2,7 +2,7 @@ public class Searching {
 
     public static int linearSearch(int[] arr, int target) {
         if (arr == null || arr.length == 0) {
-            System.out.println("Array is empty or null.");
+            System.out.println("The Array is empty or null.");
             return -1;
         }
 

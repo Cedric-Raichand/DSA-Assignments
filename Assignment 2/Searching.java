@@ -1,5 +1,11 @@
 public class Searching {
+
     public static int linearSearch(int[] arr, int target) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null.");
+            return -1;
+        }
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Checking index " + i + ": value = " + arr[i]);
             if (arr[i] == target) {
@@ -12,6 +18,11 @@ public class Searching {
     }
 
     public static int binarySearch(int[] arr, int target) {
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null.");
+            return -1;
+        }
+
         int left = 0, right = arr.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;
